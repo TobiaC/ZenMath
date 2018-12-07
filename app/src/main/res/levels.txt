@@ -1,0 +1,8 @@
+sumGAme:
+Addition
+level	numbers	
+level 1:	0-9
+level 2:	0-19
+level 3:	0-59
+level 4:	0-79
+level 5;	0-99

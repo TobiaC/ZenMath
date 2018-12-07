@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlayActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg2" />
+
+    <TextView
+        android:id="@+id/levelTexView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/robotoregularfont"
+        android:text="@string/lev1"
+        android:textColor="#fff"
+        android:textSize="40sp" />
+
+    <TextView
+        android:layout_below="@id/levelTexView"
+        android:id="@+id/operationTexView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/robotoregularfont"
+        android:textAllCaps="true"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        />
+
+    <ImageView
+        android:id="@+id/lifeView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/operationTexView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/life" />
+
+    <TextView
+        android:id="@+id/TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:fontFamily="@font/robotothinfont"
+        android:text=""
+        android:textColor="#fff"
+        android:textSize="60sp" />
+
+    <RelativeLayout
+        android:id="@+id/equation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lifeView"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="15sp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/numberA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/robotoregularfont"
+            android:text="@string/zero"
+            android:textColor="#fff"
+            android:textSize="60sp" />
+
+        <TextView
+            android:id="@+id/operator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/numberA"
+            android:fontFamily="@font/robotoregularfont"
+            android:text="@string/plus"
+            android:textColor="#fff"
+            android:textSize="60sp" />
+
+        <TextView
+            android:id="@+id/numberB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/operator"
+            android:fontFamily="@font/robotoregularfont"
+            android:text="@string/zero"
+            android:textColor="#fff"
+            android:textSize="60sp" />
+
+        <TextView
+            android:id="@+id/equals"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/numberB"
+            android:fontFamily="@font/robotoregularfont"
+            android:text="@string/equals"
+            android:textColor="#fff"
+            android:textSize="60sp" />
+
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/equals"
+            android:fontFamily="@font/robotoregularfont"
+            android:text=""
+            android:textColor="#fff"
+            android:textSize="60sp" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/numbers"
+        android:layout_width="218dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/checkButton"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp">
+
+        <Button
+            android:id="@+id/number1"
+            android:layout_width="63dp"
+            android:layout_height="63dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/bottone_numeri"
+            android:fontFamily="@font/robotoregularfont"
+            android:text=""
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/number2"
+            android:layout_width="63dp"
+            android:layout_height="63dp"
+            android:layout_margin="5dp"
+            android:layout_toRightOf="@id/number1"
+            android:background="@drawable/bottone_numeri"
+            android:fontFamily="@font/robotoregularfont"
+            android:text=""
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/number3"
+            android:layout_width="63dp"
+            android:layout_height="63dp"
+            android:layout_margin="5dp"
+            android:layout_toRightOf="@id/number2"
+            android:background="@drawable/bottone_numeri"
+            android:fontFamily="@font/robotoregularfont"
+            android:text=""
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/number4"
+            android:layout_width="63dp"
+            android:layout_height="63dp"
+            android:layout_below="@id/number1"
+            android:layout_margin="5dp"
+            android:background="@drawable/bottone_numeri"
+            android:fontFamily="@font/robotoregularfont"
+            android:text=""
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/number5"
+            android:layout_width="63dp"
+            android:layout_height="63dp"
+            android:layout_below="@id/number2"
+            android:layout_margin="5dp"
+            android:layout_toRightOf="@id/number4"
+            android:background="@drawable/bottone_numeri"
+            android:fontFamily="@font/robotoregularfont"
+            android:text=""
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/number6"
+            android:layout_width="63dp"
+            android:layout_height="63dp"
+            android:layout_below="@id/number3"
+            android:layout_margin="5dp"
+            android:layout_toRightOf="@id/number5"
+            android:background="@drawable/bottone_numeri"
+            android:fontFamily="@font/robotoregularfont"
+            android:text=""
+            android:textSize="30sp" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/checkButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/bottonegrandeangoli"
+        android:fontFamily="@font/robotoregularfont"
+        android:text="@string/check"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/checkView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/equation"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/robotothinfont"
+        android:textColor="#000"
+        android:textSize="30dp"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/pointsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:fontFamily="@font/robotothinfont"
+        android:text="@string/points"
+        android:textColor="#fff"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/points"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pointsTextView"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="@font/robotothinfont"
+        android:text="@string/zero"
+        android:textColor="#fff"
+        android:textSize="40sp" />
+
+
+    <Button
+        android:id="@+id/BackButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/bottonepiccolo"
+        android:text="Back"
+        android:textSize="20sp" />
+
+</RelativeLayout>

@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Zen Math</string>
+    <string name="rules">Risolvi ogni equazione entro il tempo limite per guadagnare punti e vite, avanzare nei livelli e scalare la classifica.</string>
+    <string name="rules1">Ogni risposta errata comporta la perdita di una vita, ed una volta perse tutte le vite la sessione di gioco termina. Il superamento di ogni livello aggiunge una vita extra, ed ogni risposta esatta aggiunge un punto.</string>
+    <string name="welcome">Welcome to</string>
+    <string name="howToPlay">How to</string>
+    <string name="play">Play</string>
+    <string name="credits">Credits</string>
+    <string name="rulesTitle">How To</string>
+    <string name="creditsText">An idea by: Tobia Cargnello, Salvatore Riefolo\nDeveloped: Tobia Cargnello\nDesigned by: Salvatore Riefolo\nMusic and sounds by: Tobia Cargnello</string>
+    <string name="plus">+</string>
+    <string name="equals">=</string>
+    <string name="points">Score</string>
+    <string name="check">check</string>
+    <string name="restart">restart</string>
+    <string name="wrong">Wrong</string>
+    <string name="zero">0</string>
+    <string name="lev1">Level 1</string>
+    <string name="lev2">Level 2</string>
+    <string name="lev4">Level 4</string>
+    <string name="lev5">Level 5</string>
+    <string name="lev6">Level 6</string>
+    <string name="zen">Zen Math</string>
+    <string name="lev3">Level 3</string>
+    <string name="sum">Sum</string>
+    <string name="product">Product</string>
+    <string name="gameover">Game Over</string>
+    <string name="gameovertime">Time\'s out\nGame Over</string>
+    <string name="presstostart">press anywhere to start</string>
+</resources>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg2" />
+
+
+    <TextView
+        android:id="@+id/WelcomeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/robotothinfont"
+        android:text="@string/welcome"
+        android:textColor="#fff"
+        android:textSize="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/WelcomeTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/robotothinfont"
+        android:text="@string/zen"
+        android:textAllCaps="true"
+        android:textColor="#fff"
+        android:textSize="50sp" />
+
+    <Button
+        android:id="@+id/RulesButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/PlayButton"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10sp"
+        android:background="@drawable/bottonepiccolo"
+        android:fontFamily="@font/robotolight"
+        android:text="@string/howToPlay"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/PlayButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="10sp"
+        android:background="@drawable/bottonepiccolo"
+        android:fontFamily="@font/robotolight"
+        android:text="@string/play"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/CreditsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/PlayButton"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10sp"
+        android:background="@drawable/bottonepiccolo"
+        android:fontFamily="@font/robotolight"
+        android:text="@string/credits"
+        android:textSize="20sp" />
+
+</RelativeLayout>
